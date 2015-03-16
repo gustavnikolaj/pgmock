@@ -30,12 +30,12 @@
   },
   "homepage": "https://github.com/gustavnikolaj/pgmock",
   "devDependencies": {
+    "istanbul": "0.3.8",
     "jscs": "1.11.3",
     "jshint": "2.6.3",
     "mocha": "2.2.1"
   },
   "dependencies": {
-    "istanbul": "0.3.8",
     "lodash": "3.5.0",
     "unexpected": "6.4.0"
   }
