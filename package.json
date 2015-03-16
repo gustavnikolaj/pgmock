@@ -5,8 +5,10 @@
   "main": "lib/PgMock.js",
   "scripts": {
     "coverage": "istanbul cover --include-all-sources _mocha -- --reporter dot",
+    "coverage-spec": "istanbul cover --include-all-sources _mocha -- --reporter spec",
     "lint": "jshint . && jscs .",
-    "test": "mocha"
+    "test": "mocha",
+    "travis": "npm run lint && npm run coverage-spec"
   },
   "repository": {
     "type": "git",
