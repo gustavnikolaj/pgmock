@@ -1,6 +1,6 @@
 {
   "name": "pgmock",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mock implementation of the pg module.",
   "main": "lib/PgMock.js",
   "scripts": {
