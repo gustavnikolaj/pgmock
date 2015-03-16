@@ -4,6 +4,7 @@
   "description": "A mock implementation of the pg module.",
   "main": "lib/PgMock.js",
   "scripts": {
+    "coverage": "istanbul cover --include-all-sources _mocha -- --reporter dot",
     "lint": "jshint . && jscs .",
     "test": "mocha"
   },
@@ -32,6 +33,7 @@
     "mocha": "2.2.1"
   },
   "dependencies": {
+    "istanbul": "0.3.8",
     "lodash": "3.5.0",
     "unexpected": "6.4.0"
   }
