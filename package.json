@@ -4,6 +4,7 @@
   "description": "A mock implementation of the pg module.",
   "main": "lib/PgMock.js",
   "scripts": {
+    "lint": "jshint . && jscs .",
     "test": "mocha"
   },
   "repository": {
@@ -26,6 +27,8 @@
   },
   "homepage": "https://github.com/gustavnikolaj/pgmock",
   "devDependencies": {
+    "jscs": "1.11.3",
+    "jshint": "2.6.3",
     "mocha": "2.2.1"
   },
   "dependencies": {
