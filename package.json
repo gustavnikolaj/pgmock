@@ -1,0 +1,35 @@
+{
+  "name": "pgmock",
+  "version": "0.0.0",
+  "description": "A mock implementation of the pg module.",
+  "main": "lib/PgMock.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gustavnikolaj/pgmock"
+  },
+  "keywords": [
+    "postgres",
+    "pg",
+    "libpg",
+    "postgre",
+    "database",
+    "mock",
+    "test"
+  ],
+  "author": "Gustav Nikolaj Olsen <gno@one.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavnikolaj/pgmock/issues"
+  },
+  "homepage": "https://github.com/gustavnikolaj/pgmock",
+  "devDependencies": {
+    "mocha": "2.2.1"
+  },
+  "dependencies": {
+    "lodash": "3.5.0",
+    "unexpected": "6.4.0"
+  }
+}
