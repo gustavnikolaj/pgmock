@@ -8,7 +8,7 @@
     "coverage-spec": "istanbul cover --include-all-sources _mocha -- --reporter spec",
     "lint": "jshint . && jscs .",
     "test": "mocha",
-    "travis": "npm run lint && npm run coverage-spec"
+    "travis": "npm run lint && npm run coverage-spec && <coverage/lcov.info coveralls"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/gustavnikolaj/pgmock",
   "devDependencies": {
+    "coveralls": "2.11.2",
     "istanbul": "0.3.8",
     "jscs": "1.11.3",
     "jshint": "2.6.3",
