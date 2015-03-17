@@ -109,6 +109,29 @@ describe('PgMock', function () {
             });
         });
     });
+    it('should fail if you try to call query on the client, after it has been returned to the pool.', function (done) {
+        var pgMock = new PgMock([
+            {
+                query: 'SELECT * FROM pets WHERE name = $1',
+                params: [ /^Fi/ ],
+                result: {
+                    rows: [
+                        {
+                            id: '1',
+                            name: 'Fido'
+                        }
+                    ]
+                }
+            }
+        ]);
+        pgMock.connect('foo', function (err, client, pgDone) {
+            pgDone();
+            expect(function () {
+                client.query('SELECT * FROM pets WHERE name = $1', [ 'Fido' ]);
+            }, 'to throw', 'Calling query on client after calling done.');
+            done();
+        });
+    });
     describe('connection pool', function () {
         describe('returning', function () {
             it('should complain if the client is not returned to the connection pool', function (done) {
