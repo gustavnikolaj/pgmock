@@ -1,6 +1,6 @@
 {
     // == Enforcing Options ===============================================
-    
+
     "bitwise"       : false,    // Prohibit bitwise operators (&, |, ^, etc.).
     "curly"         : false,    // Require {} for every new block or scope. (Moved to codestyle check)
     "eqeqeq"        : true,     // Require triple equals i.e. `===`.
@@ -15,9 +15,9 @@
     "undef"         : true,     // Require all non-global variables be declared before they are used.
     "unused"        : "vars",   // If variables defined but not used are checked.
     "strict"        : false,    // Require `use strict` pragma in every file.
-    
+
     // == Relaxing Options ================================================
-    
+
     "asi"           : false,    // Tolerate Automatic Semicolon Insertion (no semicolons).
     "boss"          : false,    // Tolerate assignments inside if, for & while. Usually conditions & loops are for comparison, not assignments.
     "debug"         : false,    // Allow debugger statements e.g. browser breakpoints.
@@ -39,9 +39,9 @@
     "sub"           : true,     // Tolerate all forms of subscript notation besides dot notation e.g. `dict['key']` instead of `dict.key`.
     "supernew"      : false,    // Tolerate `new function () { ... };` and `new Object;`.
     "validthis"     : false,    // Tolerate strict violations when the code is running in strict mode and you use this in a non-constructor function.
-    
+
     // == Environments ====================================================
-    
+
     "browser"       : false,    // Standard browser globals e.g. `window`, `document`.
     "couch"         : false,    // Enable globals exposed by CouchDB.
     "devel"         : false,    // Allow development statements e.g. `console.log();`.
@@ -59,17 +59,6 @@
 
     // == Globals =========================================================
     "globals": {
-        "one": true, 
-        "Ext": true, 
-        "INCLUDE": false, 
-        "GETSTATICURL": false, 
-        "GETTEXT": false, 
-        "TR": false, 
-        "TRPAT": false, 
-        "TRHTML": false, 
-        "LOCALEID": true, 
-        "SUPPORTEDLOCALEIDS": true, 
-        "DEFAULTLOCALEID": true, 
-        "LOCALECOOKIENAME": true
+        "setImmediate": true
     }
 }
